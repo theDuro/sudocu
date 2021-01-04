@@ -24,8 +24,10 @@ public class IdentificationNumberApiController {
 
 
         CsvOperationsComponentImpl csvreader = new CsvOperationsComponentImpl();
-        String[] a = new String[]{ "1","2","3","4","5","6","7","8","9","10" };
-       //return new ResponseEntity<>(CheckingPesel.itscorectPesel(csvreader.readCsvFile("books.csv", ","),HttpStatus.OK));
+       if(CheckingPesel.itscorectPesel() == null){
+           return new ResponseEntity<String[]>(HttpStatus.OK);
+        }
+
         return new ResponseEntity<String[]>(CheckingPesel.itscorectPesel(),HttpStatus.OK);
 
 

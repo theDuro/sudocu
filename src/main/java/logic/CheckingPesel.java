@@ -26,6 +26,9 @@ public class CheckingPesel {
 
 
 
+
+
+
         final int SIZE_OF_SUDOCU = 9;
 
 
@@ -33,7 +36,7 @@ public class CheckingPesel {
 
         Set<String> numbersLoader_W = new LinkedHashSet<>();
         Set<String> numbersLoader_H = new LinkedHashSet<>();
-        System.out.print(" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+
 
         for(int i = 1 ; i <=SIZE_OF_SUDOCU;i++){
             for(int k = 1 ; k <= SIZE_OF_SUDOCU;k++){
